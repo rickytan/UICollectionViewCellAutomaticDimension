@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1406FFB724FF6556CC43AECC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1406FFB724FF6556CC43AECC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1440B043C10A8EBC14FAD869 /* Pods-UICollectionViewCellAutomaticDimension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCellAutomaticDimension_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewCellAutomaticDimension_Tests/Pods-UICollectionViewCellAutomaticDimension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3EDAF6DD5F66D5F412A40195 /* Pods_UICollectionViewCellAutomaticDimension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionViewCellAutomaticDimension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5B47340BD092D50721A55C /* Pods-UICollectionViewCellAutomaticDimension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCellAutomaticDimension_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewCellAutomaticDimension_Example/Pods-UICollectionViewCellAutomaticDimension_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E3E2A27CB0E5A82737AD11A /* UICollectionViewCellAutomaticDimension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = UICollectionViewCellAutomaticDimension.podspec; path = ../UICollectionViewCellAutomaticDimension.podspec; sourceTree = "<group>"; };
+		7E3E2A27CB0E5A82737AD11A /* UICollectionViewCellAutomaticDimension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UICollectionViewCellAutomaticDimension.podspec; path = ../UICollectionViewCellAutomaticDimension.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FB2D94ED07B451F08FAB4ED /* Pods-UICollectionViewCellAutomaticDimension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCellAutomaticDimension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewCellAutomaticDimension_Tests/Pods-UICollectionViewCellAutomaticDimension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99219E20D31D96FFCC9F2DC4 /* Pods_UICollectionViewCellAutomaticDimension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionViewCellAutomaticDimension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3884915881DBDE935C83E29 /* Pods-UICollectionViewCellAutomaticDimension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCellAutomaticDimension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewCellAutomaticDimension_Example/Pods-UICollectionViewCellAutomaticDimension_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FB679FA876A43530EE25261C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FB679FA876A43530EE25261C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +247,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RT;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = rickytan;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -468,14 +468,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -508,13 +513,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

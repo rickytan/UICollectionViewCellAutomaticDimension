@@ -1,0 +1,6 @@
+framework module UICollectionViewCellAutomaticDimension {
+  umbrella header "UICollectionViewCellAutomaticDimension-umbrella.h"
+
+  export *
+  module * { export * }
+}
